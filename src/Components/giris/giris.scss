@@ -1,0 +1,36 @@
+@import "../kayıt/kayit.scss";
+@import "../mainscreen/main.scss";
+ 
+.giris_main{
+  @extend .main_container;
+   display: flex;
+   flex-direction: column;
+   align-items: center;  
+   justify-content: center;
+   gap:25px;
+
+}
+ .giris_form{
+   @extend .kayit_form;
+   margin: 0;
+ 
+ }
+ 
+ .forgotbutton{
+  width: 150px;
+  height: 50px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+ }
+
+ .forgotbutton:hover{
+   background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+ }
+ 

@@ -1,0 +1,125 @@
+@import "../mainscreen/main.scss";
+
+.kayit_main {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+
+}
+
+.kayit_container {
+    @extend .main_container;
+    gap:100px
+}
+
+.h2 {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.kayit_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    gap: 20px
+}
+
+.kayit_form label {
+    display: flex;
+    margin: 12px 0 6px;
+    font-weight: 600;
+    color: #444;
+    font-size: 14px;
+}
+
+.kayit_form input {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.kayit_form input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+.kayit_form button {
+    width: 50%;
+    padding: 12px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.kayit_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    height: 600px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    gap: 20px
+}
+
+.kayit_form button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .kayit_form {
+        margin-left: 0;
+        width: 80%;
+        height: 500px;
+    }
+    .kayit_container{
+        height: auto;
+    }
+    .kayit_info{
+        width: 80%;
+        height: 500px;
+    }
+    .kayit_container{
+        gap: 20px;
+    }
+}

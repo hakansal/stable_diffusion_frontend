@@ -1,0 +1,239 @@
+@import "../mainscreen//main.scss";
+@import "../kayıt/kayit.scss";
+
+.deneme_main {
+  @extend .main_class;
+
+
+}
+.secenekler {
+  position: relative;
+  width: 220px;
+  height: 45px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  cursor: pointer;
+} 
+
+ 
+.preview_image {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ 
+ 
+.secenek {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;   
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.secenekler .secenek.active {
+  color: white;  
+  background-color: #701dbd;  
+}
+
+.gosterge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+
+  border-radius: 25px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.secenekler.right .gosterge {
+  transform: translateX(100%);
+}
+
+.secenekler.left .gosterge {
+  transform: translateX(0%);
+}
+
+
+.deneme_pics {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.pics_container {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: start;
+  align-items: start;
+  height: 800px;
+  width: 95%;
+  margin-top: 50px;
+  margin-left: 45px;
+  animation: fadeIn 0.5s ease-in-out;
+  background: linear-gradient(to right, #9543ee, #3e81f7);
+  border-radius: 20px;
+}
+
+.img_pics {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pic_container {
+  background-color: white;
+}
+
+
+.deneme_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+.info{
+  border: 1px solid black;
+  padding: 1%;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: 600;
+    color: #444;
+    font-size: 14px;
+    align-items: start;
+}
+.info_button{
+   width: fit-content;
+  padding: 12px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+.info_button:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+.deneme_container {
+  @extend .main_container;
+  justify-content: start;
+  gap: 100px;
+  height: 850px;
+}
+
+.form_alt {
+  width: 250px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.deneme_form {
+  @extend .kayit_form;
+  margin-left: 50px;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.deneme_form input {
+  width: auto;
+}
+
+.deneme_button button {
+  @extend .kayit_form;
+
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #f3f3f3;
+  /* Hafif gri kenarlar */
+  border-top: 8px solid #3498db;
+  /* Üstte mavi renk */
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  margin: 0 auto;
+  /* Ortalamak için */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.deneme_img_container {
+   
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width:768px){
+
+  .deneme_container{
+    height: auto;
+    gap: 20px;
+    overflow: hidden;
+  }
+  .form_container{
+    width: 100%;
+  }
+  .deneme_form{
+    width: 80%;
+  }
+  .deneme_img_container{
+    width: 95%;
+    
+    
+  }
+  .deneme_img{
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../mainscreen/main.scss";
+@import "../kayıt/kayit.scss";
+
+.main_forgot{
+    @extend .main_class;
+  
+}
+.forgot_form{
+    @extend .kayit_form;
+    margin:0;
+}
+.container_forgot{
+    @extend .main_container;
+
+}
+ 
+
+ 

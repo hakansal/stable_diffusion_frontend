@@ -1,0 +1,11 @@
+@import "../mainscreen/main.scss";
+
+
+.hakk_main{
+ @extend .main_class;
+
+}
+
+.hakk_container{
+    @extend .main_container;
+}
