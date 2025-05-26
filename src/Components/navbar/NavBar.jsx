@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import image from "./Haznedar.png"
 
 const NavBar = () => {
   const [Userbutton, setUserButton] = useState(false);
   const [Loginbutton, setLoginButton] = useState(true);
   const [Logoutbutton, setLogoutButton] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);  
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const backendurl = "http://localhost:3001/userapp/cikis";
   const navigate = useNavigate();
@@ -63,7 +64,13 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <a href="anasayfa">
-        <div className="logo">Logomuz</div>
+        <div className="logo_main">
+          <div className="navbar_logo">
+            <img src={image}></img>
+          </div>
+          <div className="logo">Stable AI</div>
+
+        </div>
       </a>
 
       {/* Menü ikonu (küçük ekranlarda gözükecek) */}
