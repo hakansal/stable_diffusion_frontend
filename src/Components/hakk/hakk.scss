@@ -8,4 +8,13 @@
 
 .hakk_container{
     @extend .main_container;
+    justify-content: center;
+}
+
+
+.info_hakk{
+    @extend .main_info;
+  width: 50%;
+  height: 700px;
+  margin-left: 20px;
 }
