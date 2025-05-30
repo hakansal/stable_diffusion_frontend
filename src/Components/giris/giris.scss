@@ -2,6 +2,9 @@
 @import "../mainscreen/main.scss";
  
 .giris_main{
+  @extend .main_class
+}
+.giris_container{
   @extend .main_container;
    display: flex;
    flex-direction: column;

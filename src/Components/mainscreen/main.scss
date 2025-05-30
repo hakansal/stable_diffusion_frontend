@@ -110,4 +110,14 @@
      height: fit-content;
   }
  }
- 
+  @media (max-width: 500px) {
+    .main_slider{
+      margin-top: 20px;
+    }
+    .main_container{
+      gap:100px
+    }
+  .pp{ font-size: 1rem;
+
+  }
+  }

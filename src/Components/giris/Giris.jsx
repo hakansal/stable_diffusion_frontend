@@ -48,7 +48,8 @@ const Giris = () => {
   };
 
   return (
-    <div className="giris_main">
+     <div className="giris_main">
+      <div className="giris_container">
       <form className="giris_form" onSubmit={handlelogin}>
         <h2 className="h2">Giriş</h2>
 
@@ -76,6 +77,7 @@ const Giris = () => {
       </form>
       <button onClick={forgot} className="forgotbutton">şifremi unuttum</button>
     </div>
+     </div>
   );
 };
 
