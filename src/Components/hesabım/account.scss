@@ -1,15 +1,17 @@
 @import "../mainscreen/main.scss";
 @import "../kayıt//kayit.scss";
 
-.main_account {
-    @extend .main_class
+.main_acount {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center
+
 }
 
 .account_container {
 
-    @extend .main_container;
-
-    justify-content: start;
+    @extend .main_container;  
 }
 
 .account_header {
@@ -134,7 +136,7 @@
     }
     .user_info{
     
-        width: 80%;
+        width: 85%;
         margin-left: 0;
         height: auto;
     }
@@ -160,4 +162,15 @@
     width: 95%;
     justify-content: center;
  }
+}
+@media (max-width: 500px) {
+
+.main_account{
+    background-color: aqua;
+    justify-content: center;
+   margin-left: 50px;
+}
+.account_header{
+    font-size: large;
+}
 }

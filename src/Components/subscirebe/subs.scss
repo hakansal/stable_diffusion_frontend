@@ -1,34 +1,41 @@
 @import "../mainscreen//main.scss";
 @import "../kayıt/kayit.scss";
 
-.subs_main{
-@extend .main_class;
-
+.subs_main {
+    @extend .main_class;
 }
-.subs_container{
+.subs_container {
     @extend .main_container;
-  justify-content: start;
- gap:0px
+    justify-content: start;
+    gap: 0px;
+     
 }
-.subs_info{
+
+.subs_info {
     @extend .main_info;
     height: 400px;
     margin-left: 20px;
 }
 
-.subs_form{
+.subs_form {
     @extend .kayit_form;
     height: 200px;
 }
 
 /* Mobil uyumluluk */
 @media (max-width: 768px) {
-   .subs_info{
-    margin-top: 50px;
-   }
+    .subs_info {
+        margin-top: 50px;
+    }
 }
+@media (max-width: 500px) {
+    .subs_info {
+        margin: 0;
+    }
+}
+
 @media (max-width: 1000px) {
-   .subs_info{
-    margin-top: 50px;
-   }
+    .subs_info {
+        margin-top: 50px;
+    }
 }

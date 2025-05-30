@@ -156,9 +156,7 @@ const Account = () => {
             (
                 <div className="main_acount">
 
-
                     <div className=" account_container">
-
 
                         <div className="user_info">
                             <div className="account_header">
@@ -227,9 +225,6 @@ const Account = () => {
                                     />
                                     <button onClick={handleusername} >güncelle</button>
                                 </div>
-                                 
-
-
 
                             </form>
                             <form onSubmit={handlepassword} className="account_form">

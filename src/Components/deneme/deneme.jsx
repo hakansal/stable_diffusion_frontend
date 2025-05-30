@@ -79,9 +79,7 @@ const Deneme = () => {
 
   }
   // kullanım kontrolu
-  const uses_check=async()=>{
-    
-
+  const uses_check = async () => {
   }
 
   //fotoğraf için api isteeği
@@ -121,14 +119,13 @@ const Deneme = () => {
   const handlepic = async (e) => {
 
     e.preventDefault();
-     
+
     try {
       const response = await axios.get(backendurl, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
       });
-
 
     } catch (error) {
       if (error.response.status === 400) {
@@ -152,7 +149,6 @@ const Deneme = () => {
           alert("Görsel oluşturulamadı!");
         }
 
-
         setLoadingbox(false);
         setButton(true);
         setUserpromt("");
@@ -160,8 +156,6 @@ const Deneme = () => {
       }
 
     }
-
-
   };
 
   return (
