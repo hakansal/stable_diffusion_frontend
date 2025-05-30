@@ -1,4 +1,6 @@
  .main_class {
+  display: flex;
+  flex-direction: column;
      height: 100%;
      width: 100%;
      align-items: center;
@@ -14,7 +16,6 @@
      height: 800px;
      width: 95%;
      margin-top: 50px;
-     margin-left: 45px;
      animation: fadeIn 0.5s ease-in-out;
      background: linear-gradient(to right, #9543ee, #3e81f7);
      border-radius: 20px;

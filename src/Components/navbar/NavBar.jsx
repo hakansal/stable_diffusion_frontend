@@ -62,6 +62,8 @@ const NavBar = () => {
   }, []);
 
   return (
+    <div className="main_navbar">
+      
     <div className="navbar">
       <a href="anasayfa">
         <div className="logo_main">
@@ -124,7 +126,8 @@ const NavBar = () => {
         )}
       </div>
     </div>
-  );
+
+    </div>  );
 };
 
 export default NavBar;
