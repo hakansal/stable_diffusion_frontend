@@ -47,7 +47,7 @@ const Deneme = () => {
 
   const backendurl = process.env.REACT_APP_DENEME_BACKEND_URL
   const backendurl_save = process.env.REACT_APP_DENEME_BACKEND_URL_SAVE
-  const key = process.env.REACT_APP_DENEME_BACKEND_URL_SAVE
+  const key = process.env.REACT_APP_API_KEY;
   const url = process.env.REACT_APP_API_URL;
 
   //fotoğraf parametreleri
