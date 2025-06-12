@@ -14,6 +14,7 @@ import Hak from './Components/hakk/hakk';
 import Draws from './Components/cizim/draw';
 import Forgot from './Components/forgot/forgot';
 
+ 
 
 function App() {
   return (
