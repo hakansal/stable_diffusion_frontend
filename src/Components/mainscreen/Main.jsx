@@ -19,7 +19,8 @@ const Main = () => {
         <div className="main_info">
           <h2>Stable difusion</h2>
           <div className="pp">
-            Stable Diffusion modeli sayesinde, hayal ettiğiniz tarzda benzersiz resimler oluşturabilir ve bu görselleri istediğiniz şekilde şekillendirip kişiselleştirebilirsiniz. Yapay zekânın sunduğu güçlü olanaklarla yaratıcılığınızı özgür bırakır, etkileyici ve özgün görsel içerikler üretme imkanı elde edersiniz.
+            Stable Diffusion modeli sayesinde, hayal ettiğiniz tarzda benzersiz resimler oluşturabilir ve bu görselleri istediğiniz şekilde şekillendirip kişiselleştirebilirsiniz.
+             Yapay zekânın sunduğu güçlü olanaklarla yaratıcılığınızı özgür bırakır, etkileyici ve özgün görsel içerikler üretme imkanı elde edersiniz.
             </div>
         </div>
       </div>

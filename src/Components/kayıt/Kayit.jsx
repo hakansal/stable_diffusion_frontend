@@ -82,9 +82,7 @@ const Kayit = () => {
 
           <button type="submit">Gönder</button>
         </form>
-        <div className="kayit_info">
-          fad
-        </div>
+         
       </div>
 
     </div>

@@ -103,7 +103,7 @@ const NavBar = () => {
               <button className="navbar_button">Abone Ol</button>
             </a>
             <a href="/deneme">
-              <button className="navbar_button">Deneme</button>
+              <button className="navbar_button">Çizim</button>
             </a>
           </>
         )}
