@@ -83,6 +83,7 @@ h2 {
   }
   .navbar{
     width: 90%;
+    margin-top: 10px;
   }
 
   .navbar_buttons {

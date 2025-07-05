@@ -80,7 +80,7 @@ const Hak = () => {
         </img>
       </div>
       
-      <div className="info_hakk">
+      <div className="info_hakklast">
 
         <div className="pp_hakk">
           <ul>
