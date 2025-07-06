@@ -8,6 +8,10 @@ const Hak = () => {
 
   return <div className="hakk_main">
     <div className="hakk_container">
+    <div className="hakk_slider">
+        <img src={img2}>
+        </img>
+      </div>
       <div className="info_extend">
 
         <div className="pp_hakk">
@@ -20,11 +24,13 @@ const Hak = () => {
                 Ben bilgisayar mühendisliği mezunu bir yazılım geliştiriciyim. Stable AI, yapay zeka ve web teknolojileriyle ilgilendiğim bir dönemde geliştirmeye başladığım kişisel bir projedir.
               </span>
             </li>
+            <br></br>
             <li>
               <span>
                 Bu platformda, kullanıcıların yapay zekâ destekli çizimler oluşturabileceği basit ve işlevsel bir sistem kurmayı hedefledim.
               </span>
             </li>
+            <br></br>
             <li>
               <span>
                 Aynı zamanda giriş/çıkış, kullanıcı yönetimi, abonelik sistemi gibi tam bir web uygulamasında bulunması gereken özellikleri de bu projede denemek istedim.
@@ -34,15 +40,12 @@ const Hak = () => {
         </div>
 
       </div>
-      <div className="hakk_slider">
-        <img src={img2}>
-        </img>
-      </div>
+       
 
 
     </div>
     <div className="hakk_container">
-  <div className="hakk_slider">
+      <div className="hakk_slider">
         <img src={img3}>
         </img>
       </div>
@@ -55,13 +58,14 @@ const Hak = () => {
           <ul>
             <li>
               <span>  Full stack becerilerimi geliştirmek</span>
-            </li>
+            </li><br></br>
             <li>
               <span> React, Express.js, MongoDB ve JWT gibi teknolojileri gerçek bir projede deneyimlemek</span>
-            </li>
+            </li><br></br>
             <li>
               <span>Yapay zekâ (özellikle Stable Diffusion) ile üretim süreçlerini daha yakından tanımak</span>
             </li>
+            <br></br>
             <li><span>
               github projelerimi buradan inceleyebilirsiniz.
             </span></li>
@@ -71,7 +75,7 @@ const Hak = () => {
 
         </div>
       </div>
-     
+
     </div>
     <div className="hakk_container">
 
@@ -79,26 +83,26 @@ const Hak = () => {
         <img src={img1}>
         </img>
       </div>
-      
+
       <div className="info_hakklast">
 
         <div className="pp_hakk">
           <ul>
             <li>
               <span>
-            mind map ile projenin daha detaylı halini görsel olarak inceleyebilirsiniz.
-          </span>
+                mind map ile projenin daha detaylı halini görsel olarak inceleyebilirsiniz.
+              </span>
             </li>
-           
-          <a href="https://www.mindmeister.com/app/map/3659108662?source=template">https://www.mindmeister.com/app/map/3659108662?source=template</a> 
 
-            
+            <a href="https://www.mindmeister.com/app/map/3659108662?source=template">https://www.mindmeister.com/app/map/3659108662?source=template</a>
+
+
           </ul>
         </div>
       </div>
 
     </div>
-     
+
   </div>
 }
 export default Hak;

@@ -10,13 +10,10 @@ const Account = () => {
     const [username, setUsername] = useState("");
     const [password2, setPassword2] = useState("");
     let passcheck = false;
-    const backendurlinfo = "http://localhost:3001/userapp/kullanici";
-    const backendurlupdate_isim = "http://localhost:3001/userapp/guncelle/isim";
-    const backendurlupdate_sifre = "http://localhost:3001/userapp/guncelle/sifre";
-
-    //tokenın suresi geçince local storagedan kaldırsın 
-    //backende user_log bilgileri de dönderilsin hatta kullanıcı kaç kere resim çizmiş onlarda dönderilsin
-
+    const backendurlinfo = process.env.REACT_APP_ACCOUNT_BACKEND_URL_INFO;
+    const backendurlupdate_isim = process.env.REACT_APP_ACCOUNT_BACKEND_UPDATE_ISIM;
+    const backendurlupdate_sifre =  process.env.REACT_APP_ACCOUNT_BACKEND_UPDATE_SIFRE;
+ 
 
     //giriş kontrolü
     const enteringAccount = () => {

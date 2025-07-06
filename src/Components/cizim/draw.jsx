@@ -3,10 +3,10 @@ import "./draw.scss";
 import axios from "axios";
 
 const Draws = () => {
-  const backendurl = "http://localhost:3001/userapp/send/pics";
+  const backendurl =  process.env.REACT_APP_DRAW_BACKEND_URL
   const [pics, setPics] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
-
+    
   useEffect(() => {
     const pullpics = async () => {
       try {
@@ -18,14 +18,14 @@ const Draws = () => {
         setPics(response.data.images);
       } catch (error) {
         console.error(error);
-      }
+      }       
     };
 
     pullpics();
   }, []);
-
+   
   const handleImageClick = (imgUrl) => {
-    setSelectedImage(`http://localhost:3001${imgUrl}`);
+    setSelectedImage(`http://195.174.220.164:3001${imgUrl}`);
   };
 
   const closeModal = () => {
@@ -39,7 +39,7 @@ const Draws = () => {
           <div className="frame">
             {pics.map((item, index) => (
               <div key={index} className="box" onClick={() => handleImageClick(item.url)}>
-                <img src={`http://localhost:3001${item.url}`} alt={item.filename} />
+                <img src={`http://195.174.220.164:3001${item.url}`} alt={item.filename} />
                 <p >{item.filename}</p>
               </div>
             ))}

@@ -10,7 +10,7 @@ const NavBar = () => {
   const [Logoutbutton, setLogoutButton] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const backendurl = "http://localhost:3001/userapp/cikis";
+  const backendurl = process.env.REACT_APP_NAVBAR_BACKEND_URL;
   const navigate = useNavigate();
 
   const userlogout = async () => {

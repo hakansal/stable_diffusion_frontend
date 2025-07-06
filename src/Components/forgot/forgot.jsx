@@ -5,7 +5,7 @@ import axios from "axios";
 const Forgot = () => {
   const [email, setEmail] = useState("");
   const [backend,setbackend]=useState(false);
-  const backendurl = "http://localhost:3001/userapp/forgot";
+  const backendurl = process.env.FORGOT_BACKEND_URL;
  
 
   const senddata = async (e) => {

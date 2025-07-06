@@ -8,7 +8,7 @@ const Giris = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const backendurl = "http://localhost:3001/userapp/giris";
+  const backendurl = process.env.REACT_APP_LOGIN_BACKEND_URL;
   const data = {
     email: email,
     password: password,

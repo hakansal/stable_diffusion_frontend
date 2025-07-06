@@ -8,7 +8,7 @@ const Kayit = () => {
   const [username, setUsername] = useState(null);
   const [password, setPassword] = useState(null);
 
-  const backendurl = "http://localhost:3001/userapp/kayit"
+  const backendurl =  process.env.REACT_APP_SIGN_BACKEND_URL;
   const data = {
     email: email,
     username: username,
