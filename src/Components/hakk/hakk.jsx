@@ -49,11 +49,10 @@ const Hak = () => {
         <img src={img3}>
         </img>
       </div>
-      <div className="info_hakk">
-
+      <div className="info_extend">
+        
+        <h2 className="span_head">  Neden Bu Projeyi Yaptım?</h2>
         <div className="pp_hakk">
-
-          <span className="span_head">  Neden Bu Projeyi Yaptım?</span>
 
           <ul>
             <li>

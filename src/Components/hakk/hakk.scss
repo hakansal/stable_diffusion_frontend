@@ -16,6 +16,7 @@
 }
 
 .pp_hakk{
+  padding: 0%;
   @extend .pp;
   height: fit-content;
   font-weight: 500;
@@ -46,8 +47,29 @@
 .info_extend{
   @extend .info_hakk;
   width: 40%;
-  height: 450px;
+  min-height: 500px;
 }
+.pp_hakk ul {
+  list-style: none;
+  padding-left: 0;
+ 
+}
+
+.pp_hakk li {
+ 
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.pp_hakk li::before {
+  content: "💡";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+}
+
 @media(max-width:500px){
 
 

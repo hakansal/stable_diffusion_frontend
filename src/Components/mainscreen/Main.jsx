@@ -51,7 +51,13 @@ const Main = () => {
               <br></br>
               <li>
                 <span>
-                  Oluşturduğunuz görseller, ekstra bir işlem yapmanıza gerek kalmadan otomatik olarak kaydedilir; böylece dilediğiniz zaman galerinizden ulaşabilir ve kullanabilirsiniz. Kullanımı basit ve hızlı arayüzü sayesinde yaratıcılığınızı özgürce keşfetmenize olanak sağlar.
+                  Oluşturduğunuz görseller, ekstra bir işlem yapmanıza gerek kalmadan otomatik olarak kaydedilir; böylece dilediğiniz zaman galerinizden ulaşabilir ve kullanabilirsiniz. 
+
+                </span>
+              </li>
+              <li>
+                <span>
+                  Kullanımı basit ve hızlı arayüzü sayesinde yaratıcılığınızı özgürce keşfetmenize olanak sağlar.
 
                 </span>
               </li>
