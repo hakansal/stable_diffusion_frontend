@@ -12,8 +12,8 @@ const Account = () => {
     let passcheck = false;
     const backendurlinfo = process.env.REACT_APP_ACCOUNT_BACKEND_URL_INFO;
     const backendurlupdate_isim = process.env.REACT_APP_ACCOUNT_BACKEND_UPDATE_ISIM;
-    const backendurlupdate_sifre =  process.env.REACT_APP_ACCOUNT_BACKEND_UPDATE_SIFRE;
- 
+    const backendurlupdate_sifre = process.env.REACT_APP_ACCOUNT_BACKEND_UPDATE_SIFRE;
+    const backendupdateuses=process.env.REACT_APP_ACCOUNT_BACKEND_URL_USES;
 
     //giriş kontrolü
     const enteringAccount = () => {
@@ -33,7 +33,7 @@ const Account = () => {
         enteringAccount();
 
         const handleStorageChange = () => {
-
+            uses_kontrol();
             enteringAccount();
         }
         window.addEventListener("storage", handleStorageChange);
@@ -45,7 +45,19 @@ const Account = () => {
         };
     }, []);
 
-
+    // useskontroll
+    const uses_kontrol=()=>{
+       try {
+         const respone=axios.get(backendupdateuses,{
+             headers: {
+                 Authorization: `Bearer ${localStorage.getItem("token")}`
+ 
+             }
+         })
+       } catch (error) {
+         alert("uses kontrol hatası")
+       }
+    }
     // istekler
     const pullUser = async () => {
 

@@ -3,13 +3,13 @@ import "./subs.scss"
 import axios from "axios";
 const Subscribe = () => {
 
-  const backendurl = "http://localhost:3001/userapp/abonelik"
-
+  const backendurl =  process.env.REACT_APP_SUBS_BACKEND_URL;
+  const backendurl_giris=process.env.REACT_APP_SUBS_POPUP_URL;
   const pop_up = () => {
     const token = localStorage.getItem("token");
 
     const popup = window.open(
-      `http://localhost:3001/userapp/patreon/giris?token=${token}`,
+      `${backendurl_giris}${token}`,
       'Hesap Doğrulama',
       'width=500,height=600'
     );
@@ -48,7 +48,8 @@ const Subscribe = () => {
 
       <div className="subs_info">
         <h1> abone olabilmeniz için patreondan üyeliğimize abone olmalısınız </h1>
-        <p> gerisi otamatik zaten ordan sonrası bizde</p>
+        <br></br>
+        <span>  patreon'dan bize destek olduğunuzda 30 günlük sınırsız kullanım hakkına sahip olacaksınız.</span>
       </div>
 
       <div className="subs_form">

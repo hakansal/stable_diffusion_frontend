@@ -95,7 +95,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  padding: 3%;
+  border-radius: 10px;
+  background: linear-gradient(to right, #cbabee, #a2bff3);
   width: 800px;
   height: 800px;
   border-radius: 20px;
@@ -197,8 +199,11 @@
   display: flex;
   flex-direction: column;
 }
+.imgorgin{
+  
+}
 @media (max-width:768px){
-
+  
   .deneme_container{
     height: auto;
     gap: 20px;
@@ -213,11 +218,16 @@
   .deneme_img_container{
     width: 95%;
     
-    
+    justify-content: center;
+    align-items: center;
   }
   .deneme_img{
-    width: 100%;
-    height: auto;
+     min-height: 100px;
+  padding: 3%;
+  border-radius: 10px;
+  width: 90%;
+  height: fit-content;
+  background: linear-gradient(to right, #cbabee, #a2bff3);
   }
 }
 @media (max-width:500px){
@@ -231,6 +241,8 @@ margin: 0;
   justify-content: center;
 }
 .deneme_container{
-  height: 800px;
-}
+  
+  min-height: 800px;
+} 
+ 
 }

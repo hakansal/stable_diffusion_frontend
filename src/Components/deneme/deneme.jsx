@@ -258,7 +258,7 @@ const Deneme = () => {
             <div className="deneme_img_container">
               <div className="deneme_img">
                 {loadingbox && <div className="spinner"></div>}
-                {promtimage && <img src={promturl} alt="Generated" />}
+                {promtimage && <img    src={promturl} alt="Generated" />}
 
               </div>
 

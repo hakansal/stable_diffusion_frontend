@@ -6,6 +6,7 @@ const Draws = () => {
   const backendurl =  process.env.REACT_APP_DRAW_BACKEND_URL
   const [pics, setPics] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [picscontrol,setpicscontrol]=useState(true);
     
   useEffect(() => {
     const pullpics = async () => {
@@ -16,6 +17,7 @@ const Draws = () => {
           },
         });
         setPics(response.data.images);
+        if(pics!=null)setpicscontrol(false);
       } catch (error) {
         console.error(error);
       }       
@@ -36,6 +38,9 @@ const Draws = () => {
     <div className="draws_main">
       <div className="draws_container">
         <div className="draw_info">
+          {picscontrol&&(
+            <h1>henüz birşey çizmemişsiniz</h1>
+          )}
           <div className="frame">
             {pics.map((item, index) => (
               <div key={index} className="box" onClick={() => handleImageClick(item.url)}>

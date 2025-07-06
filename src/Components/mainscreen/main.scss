@@ -51,6 +51,7 @@
  }
 
  .pp {
+  text-align: left;
    font-family: 'Open Sans', sans-serif;
    font-size: 1.155rem;
    line-height: 1.6;
@@ -103,6 +104,8 @@
  @media (max-width: 1000px) {
    .main_info {
      width: 90%;
+      height: 450px;
+       
    }
 
    .main_container {
@@ -127,7 +130,9 @@
    }
 
    .pp {
-     font-size: 0.9rem;
-
+    width: 100%;
+    font-size: 0.8rem;
+     height: fit-content;
+     font-weight: 500;
    }
  }
